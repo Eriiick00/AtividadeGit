@@ -14,6 +14,13 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Good morning, world!")
+            ZStack{
+                Image(systemName: "clock")
+                Image(systemName: "person")
+                    .offset(CGSize(width: 0, height: 50))
+            }
+            Image(systemName: "play")
+                        .imageScale(.large)
         }
         .padding()
     }
